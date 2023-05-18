@@ -17,13 +17,13 @@ npm i typescript @types/node --save-dev
 npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
 ```
 
-2. Install and configure `react-dom` using the following commands:
+2. _(Ignore if you will not be using React)_ Install and configure `react-dom` using the following commands:
 
 ```bash
 npm i react-dom @types/react @types/react-dom --save-dev
 ```
 
-3. In `tsconfig.json`, uncomment the `"jsx": "preserve",` line and change it to `"jsx": "react-jsx",`. This enables Typescript to identify and transpile `.tsx` files.
+3. _(Ignore if you will not be using React)_ In `tsconfig.json`, uncomment the `"jsx": "preserve",` line and change it to `"jsx": "react-jsx",`. This enables Typescript to identify and transpile `.tsx` files.
 
 4. Install and configure `nodemon` using the following commands:
 
