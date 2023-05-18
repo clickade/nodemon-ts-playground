@@ -41,7 +41,7 @@ touch nodemon.json
     "watch": ["src"],
     "ext": ".ts,.js,.tsx,.jsx",
     "ignore": [],
-    "exec": "ts-node ./src/index.ts"
+    "exec": "cd ./src && ts-node index.ts"
 }
 ```
 
