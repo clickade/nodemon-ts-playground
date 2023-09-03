@@ -33,6 +33,14 @@ touch src/index.ts
 npm i ts-node nodemon --save-dev
 touch nodemon.json
 ```
+Alternatively, for Windows-based consoles:
+
+```ps
+mkdir src
+echo "" > src/index.ts
+npm i ts-node nodemon --save-dev
+echo "" > nodemon.json
+```
 
 5. Add the following lines inside `nodemon.json`:
 
