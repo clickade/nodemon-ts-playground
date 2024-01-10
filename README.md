@@ -1,10 +1,31 @@
 # Quick Install And Run
 
-1. Run the following lines in your console:
+Run the following lines in your console:
 
 ```bash
+git clone https://github.com/clickade/nodemon-ts-playground.git
+cd nodemon-ts-playground
 npm install
 npm start
+```
+OR
+
+Run the following command in your console:
+
+```bash
+npm init -y
+npm i typescript @types/node --save-dev
+npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+mkdir src
+touch src/index.ts
+echo 'console.log("Hello World!")' >> src/index.ts
+npm i ts-node nodemon --save-dev
+echo '{
+    "watch": ["src"],
+    "ext": ".ts,.js,.tsx,.jsx",
+    "ignore": [],
+    "exec": "cd ./src && ts-node index.ts"
+}' >> nodemon.json
 ```
 
 # How To Create This Project From Scratch
